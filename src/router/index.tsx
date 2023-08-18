@@ -7,12 +7,13 @@ import HomePage from "../pages/HomePage";
 import SigninWithPasswordPage from "../pages/SigninWithPasswordPage";
 import RegisterWithPasswordPage from "../pages/RegisterWithPasswordPage";
 import CheckEmail from "./CheckEmail";
+import MainLayout from "../layouts/MainLayout";
 
 function Router() {
   
   return (
     <Routes>
-      <Route path="/" element={<AuthLayout />}>
+      <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
       </Route>
       <Route element={<AuthLayout />}>

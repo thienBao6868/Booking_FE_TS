@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import { Navigate, useLocation } from "react-router-dom";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import { useGlobalContext } from "../hook/useGlobalcontext";
 
 interface Props {
@@ -12,9 +12,11 @@ const CheckEmail = ({ children }: Props): JSX.Element => {
   const { isCheckEmail } = useGlobalContext();
   
   let location = useLocation();
+  const navigate = useNavigate()
   
   if (!isCheckEmail) {
     return <Navigate to="/signin" state={{ from: location }} replace/>;
+    //navigate("/signin",{state:{from:location},replace:true})
   }
 
   return <>{children}</>;

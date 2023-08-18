@@ -68,7 +68,7 @@ function AuthProvider({ children }: Props) {
     isCheckEmail: false,
   });
 
-  const checkEmail = (email) =>{
+  const checkEmail = (email: string) =>{
     dispatch({type:ActionKind.CHECK_EMAIL_SUCCESS ,payload:{email}})
   }
 

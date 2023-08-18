@@ -4,5 +4,29 @@ a{
 }
 .MuiIconButton-colorInherit:hover{
     border-radius: 10%;
-   
+}
+.MuiButton-root:hover{
+    color: #fff;
+}
+
+
+.wrapper{
+    position: relative;
+    width: 100%;
+}
+.wrapper_1{
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: var(--bui_spacing_12x) 5px calc(var(--bui_spacing_12x) + 30px);
+    position: relative;
+}
+.wrapper-title{
+    margin: auto 0;
+    max-width: 800px;
+    padding-left: 10px;
+}
+header{
+    display: block;
 }

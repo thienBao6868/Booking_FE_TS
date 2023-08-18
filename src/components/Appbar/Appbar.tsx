@@ -12,7 +12,7 @@ function Appbar() {
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar sx={{ backgroundColor: "#4178a5" }}>
+        <AppBar sx={{ backgroundColor: "#4178a5" ,minHeight:"350px"}}>
           <Toolbar
             sx={{
               display: { xs: "flex", md: "none" },
